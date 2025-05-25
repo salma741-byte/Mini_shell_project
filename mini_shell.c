@@ -26,21 +26,19 @@
 
 int running = 1;
 
- void init_shell() {
+void init_shell() {
     printf("**********************************************************************\n");
-    printf("  #####   #    #  #    #  ######  #  #    #  ######      ######   #     #          \n");
-    printf(" #     #  #    #  ##  ##  #    #  #  ##  ##  #    #      #     #  #    #           \n");
-    printf(" #     #  #    #  ##  ##  #    #  #  ##  ##  #    #      #     #  #   #            \n");
-    printf(" #     #  #    #  # ## #  ######  #  # ## #  ######      ######   ####             \n");
-    printf(" #     #  #    #  #    #  #    #  #  #    #  #    #      #     #  #   #           \n");
-    printf(" #     #  #    #  #    #  #    #  #  #    #  #    #      #     #  #    #          \n");
-    printf("  #####    ####   #    #  #    #  #  #    #  #    #      ######   #     #         \n");
-    printf("**********************************************************************\n");
+    printf(" *******   *******  *        ***     ***  *******    *******            \n");
+    printf(" *         *     *  *        *  *   *  *  *     *    *                  \n");
+    printf(" *         *     *  *        *    *    *  *     *    *                  \n");
+    printf(" *******   * *** *  *        *         *  *******    *******            \n");
+    printf("       *   *     *  *        *         *  *     *    *                  \n");
+    printf("       *   *     *  *        *         *  *     *    *                  \n");
+    printf(" *******   *     *  *******  *         *  *     *    *                  \n");
     char *username = getenv("USER");
     printf("\n\n\nCurrent user: @%s", username);
     printf("\n");
 }
-
 char *get_current_dir() {
     char cwd[FILENAME_MAX];
     char*result = getcwd(cwd, sizeof(cwd));
@@ -311,15 +309,12 @@ int simple_shell_cd(char **argv) {
 
 int simple_shell_help(char **argv) {
     static char help_information[] =
-        "SIMPLE SHELL PROJECT\n"
-        "Description \n"
-        "Oumaima Belbaraka's Shell is a simple UNIX command interpreter that replicates functionalities of the simple shell (sh).\n"
-        "This program was written entirely in C as assignment for project in Operating Systems Course."
-        "\n"
-        "\nUsage help command. Type help [command name] for help/ more information.\n"
-        "Options for [command name]:\n"
-        "cd <directory name>\t\t\tDescription: Change the current working directory.\n"
-        "exit              \t\t\tDescription: Exit shell.\n";
+         "SIMPLE SHELL PROJECT\n"
+        "Description\n"
+        "Le Shell de salma farid est un interpréteur de commandes UNIX simple, qui reproduit les fonctionnalités de bas>        "Ce programme a été entièrement développé en langage C dans le cadre d’un projet du cours de Systèmes d’exploit>        "\n"
+        "\nUtilisation : tapez la commande help. Pour obtenir de l’aide sur une commande spécifique, tapez help [nom de>        "Options possibles pour [nom de la commande] :\n"
+        "cd <nom_du_répertoire>\t\t\tDescription : Change le répertoire de travail actuel.\n"
+        "exit              \t\t\tDescription : Quitte le shell.\n";
     static char help_cd_command[] = "HELP CD COMMAND\n";
     static char help_exit_command[] = "HELP EXIT COMMAND\n";
 
