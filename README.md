@@ -70,11 +70,11 @@ make
 ./simple_shell
 ```
 
-###🖥️ Exemple d'utilisation
+## 🖥️ Exemple d'utilisation
 ![image](https://github.com/user-attachments/assets/b9d4d86c-68e5-49c6-aba8-850ab2352702)
 
 
-###🎯 Objectifs pédagogiques
+## 🎯 Objectifs pédagogiques
 Ce projet m’a permis de :
 
 - Mieux comprendre le rôle et la structure d’un shell UNIX
@@ -90,7 +90,7 @@ Ce projet m’a permis de :
 - Développer mes compétences en C et en interaction terminale
 
 
-###🚀 Améliorations prévues
+## 🚀 Améliorations prévues
 ✅ Historique des commandes avec flèches
 ✅ Redirection d'entrée/sortie (<, >, >>)
 ✅ Chaînage de commandes (;)
@@ -99,7 +99,7 @@ Ce projet m’a permis de :
 ✅ Implémentation des pipes (|)
 ✅ Ajout de tests unitaires pour les fonctions critiques
 
-###👩‍💻 Auteur
+## 👩‍💻 Auteur
 **Nom** : Salma Farid
 **Projet** : Mini Shell développé pour un module de systèmes d’exploitation
 **GitHub** : @salma741-byte
