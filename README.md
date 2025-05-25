@@ -54,24 +54,28 @@ Objectifs principaux du projet :
 - `make`
 - `git`
 
-### 🛠️ Étapes d’installation
+## 🛠️ Étapes d’installation
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/Oumaimbk/simple_shell_oumaima_belbaraka.git
+git clone https://github.com/salma741-byte/Mini_shell_project.git
 
 # Aller dans le dossier du projet
-cd simple_shell_oumaima_belbaraka
+cd Mini_shell_project_salma_farid
 
 # Compiler le shell
 make
 
 # Lancer le shell
-./simple_shell
+./salma_shell
+
 ```
 
 ## 🖥️ Exemple d'utilisation
-![image](https://github.com/user-attachments/assets/b9d4d86c-68e5-49c6-aba8-850ab2352702)
+![Capture d’écran (9)](https://github.com/user-attachments/assets/e65e7563-a1f4-424f-a103-35fb5c6b35e9)
+
+
+
 
 
 ## 🎯 Objectifs pédagogiques
@@ -90,21 +94,13 @@ Ce projet m’a permis de :
 - Développer mes compétences en C et en interaction terminale
 
 
-## 🚀 Améliorations prévues
-✅ Historique des commandes avec flèches
-✅ Redirection d'entrée/sortie (<, >, >>)
-✅ Chaînage de commandes (;)
-✅ Exécution en arrière-plan avec &
-✅ Gestion des variables d’environnement
-✅ Implémentation des pipes (|)
-✅ Ajout de tests unitaires pour les fonctions critiques
-
 ## 👩‍💻 Auteur
-**Nom** : Salma Farid
-**Projet** : Mini Shell développé pour un module de systèmes d’exploitation
-**GitHub** : @salma741-byte
 
-***Merci de consulter mon projet et n’hésitez pas à me laisser vos retours !***
+**Nom** : Salma Farid
+
+**Projet** : Mini Shell développé pour un module de systèmes d’exploitation
+
+**GitHub** : [@salma741-byte](https://github.com/salma741-byte/Mini_shell_project)
 
 
 
