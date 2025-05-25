@@ -1,82 +1,110 @@
-Mini_Shell
-Un shell UNIX minimaliste développé entièrement en langage C dans le cadre d’un projet de cours sur les systèmes d’exploitation.
-Ce projet permet aux utilisateurs d’exécuter des commandes, de naviguer dans les répertoires et de comprendre le fonctionnement interne d’un shell à travers une programmation de bas niveau.
+# 🐚 Mini Shell – Interpréteur de commandes UNIX en C
 
-🔹 Table des matières
+Un mini shell développé en C, dans le cadre d’un projet de programmation système.  
+Il permet l’exécution de commandes, la navigation dans les répertoires, et offre une meilleure compréhension du fonctionnement interne d’un shell UNIX.
 
-      Présentation du projet
-      Fonctionnalités
-      Installation
-      Exemple d’utilisation
+---
 
-🔹 Objectifs pédagogiques
+## 📚 Sommaire
 
-     Limitations
-     Améliorations futures
-     Auteur
+- [🧠 Présentation du projet](#-présentation-du-projet)
+- [⚙️ Fonctionnalités](#️-fonctionnalités)
+- [📦 Installation](#-installation)
+- [🖥️ Exemple d'utilisation](#️-exemple-dutilisation)
+- [🎯 Objectifs pédagogiques](#-objectifs-pédagogiques)
+- [⛔ Limitations](#-limitations)
+- [🚀 Améliorations prévues](#-améliorations-prévues)
+- [👩‍💻 Auteure](#-auteure)
 
-🔹 Présentation du projet
-Mini_Shell est un interpréteur de commandes UNIX minimal, développé en langage C, dans le cadre d’un projet de programmation système.
+---
 
-Ce shell permet d’exécuter des commandes de base, de gérer les processus à l’aide des appels système fork, execvp, et wait, et d’intégrer quelques commandes internes.
-Il a été conçu pour approfondir la compréhension du fonctionnement interne d’un shell UNIX tout en développant des compétences en programmation système.
+## 🧠 Présentation du projet
 
-Le projet met l’accent sur :
+**Mini Shell** est un interpréteur de ligne de commande minimaliste fonctionnant sous UNIX/Linux.  
+Il exécute des commandes simples, gère des processus via `fork`, `execvp` et `wait`, et propose quelques commandes intégrées.  
 
-La gestion des processus bas niveau
+Objectifs principaux du projet :
+- Apprendre à manipuler des processus à bas niveau
+- Comprendre le fonctionnement interne d’un shell
+- Utiliser des appels système C (entrées/sorties, signaux, exécution)
 
-Le comportement d’un shell et l’interaction avec le terminal
+---
 
-Les appels système en C (gestion des processus, entrées/sorties, signaux)
+## ⚙️ Fonctionnalités
 
-🔹 Fonctionnalités
-     Exécution de commandes – Prise en charge des commandes UNIX classiques comme ls, pwd, echo, etc.
-     Commandes internes :
+✔️ **Exécution de commandes UNIX standards** (`ls`, `pwd`, `echo`, etc.)  
+✔️ **Commandes intégrées** :
+- `cd <répertoire>` – Changer de répertoire
+- `exit` – Quitter le shell
+- `help` – Afficher l’aide
 
-cd <répertoire> – Change le répertoire de travail courant
+✔️ **Gestion des processus** avec `fork()`, `execvp()`, et `wait()`  
+✔️ **Invite personnalisée**  
+✔️ **Gestion basique de `Ctrl+C`** (signal SIGINT)  
+✔️ **Affichage clair et structuré des résultats**
 
-exit – Quitte le shell
+---
 
-help – Affiche une liste des commandes disponibles
+## 📦 Installation
 
-  . Gestion des processus – Utilisation de fork(), execvp() et wait() pour créer et gérer des processus
-  
-  . Invite personnalisée – Affiche une invite de commande claire et intuitive
-  
-  . Gestion des signaux – Intercepte Ctrl+C pour éviter l’interruption du shell
-  
-  . Affichage propre – Résultats formatés pour une lecture claire
+### 🔧 Prérequis
 
-🔹 Installation
+- Système Linux (Ubuntu, Debian…)
+- Compilateur GCC
+- `make`
+- `git`
 
-🛠 Prérequis
+### 🛠️ Étapes d’installation
 
-Un système basé sur Linux (Ubuntu, Debian, etc.)
+```bash
+# Cloner le dépôt
+git clone https://github.com/Oumaimbk/simple_shell_oumaima_belbaraka.git
 
-Le compilateur GCC
+# Aller dans le dossier du projet
+cd simple_shell_oumaima_belbaraka
 
-L’utilitaire make
+# Compiler le shell
+make
 
-Git
+# Lancer le shell
+./simple_shell
+```
 
-🔹 Exemple d'usage
-![image](https://github.com/user-attachments/assets/74804af0-e27e-4fdc-a573-83ecee7806d7)
-
-
-
-
-
-
-
-
-
-
-
-
-
+###🖥️ Exemple d'utilisation
+![image](https://github.com/user-attachments/assets/b9d4d86c-68e5-49c6-aba8-850ab2352702)
 
 
+###🎯 Objectifs pédagogiques
+Ce projet m’a permis de :
 
+- Mieux comprendre le rôle et la structure d’un shell UNIX
+
+- Travailler avec des appels système (fork, execvp, wait)
+
+- Gérer les entrées utilisateur et parser des commandes
+
+- Utiliser des signaux (comme SIGINT)
+
+- Organiser un projet C avec Makefile
+
+- Développer mes compétences en C et en interaction terminale
+
+
+###🚀 Améliorations prévues
+✅ Historique des commandes avec flèches
+✅ Redirection d'entrée/sortie (<, >, >>)
+✅ Chaînage de commandes (;)
+✅ Exécution en arrière-plan avec &
+✅ Gestion des variables d’environnement
+✅ Implémentation des pipes (|)
+✅ Ajout de tests unitaires pour les fonctions critiques
+
+###👩‍💻 Auteur
+**Nom** : Salma Farid
+**Projet** : Mini Shell développé pour un module de systèmes d’exploitation
+**GitHub** : @salma741-byte
+
+***Merci de consulter mon projet et n’hésitez pas à me laisser vos retours !***
 
 
 
